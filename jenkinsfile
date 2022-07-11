@@ -11,7 +11,7 @@ pipeline {
                 dir('secondRepo') {
                     git branch: 'main',
                     credentialsId: "raviGitAccess",
-                    url: 'https://github.com/avbravikanth1/rk.git'
+                    url: 'https://github.com/avbravikanth1/new_repo.git'
                 }
             }
         }               

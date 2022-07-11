@@ -26,7 +26,7 @@ pipeline {
         stage('status') { 
             steps { 
                 
-                ansiblePlaybook credentialsId: 'JENKINS_APP_SERVER, installation: 'ansible', playbook: 'secondRepo/task/new.yml'
+                ansiblePlaybook credentialsId: 'JENKINS_APP_SERVER', disableHostKeyChecking: true, installation: 'ansible', inventory: 'NEW_REPO/inventories/dev.inv', limit: 'jenkinsServer',playbook: 'secondRepo/task/new.yml'
 
             }  
         }          

@@ -26,7 +26,7 @@ pipeline {
         stage('status') { 
             steps { 
                 
-                ansiblePlaybook credentialsId: 'DEV_APP_SERVER', installation: 'ansible', limit: 'appserver', playbook: 'secondRepo/code.yml'
+                ansiblePlaybook credentialsId: 'JENKINS_APP_SERVER, installation: 'ansible', playbook: 'secondRepo/new.yml'
 
             }  
         }          
